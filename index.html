@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Product Store </title>
 
-    <link rel "stylesheet" href="styles.css">
-    
     <style>
         body{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             background-color: rgb(206, 184, 156);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
             color: rgb(134, 105, 31);
             font-size: xx-large;
+            text-align: center;
         }
+        
+        .product-container {
+            display: grid;
+            width: 80%;
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
 
     <h1> Product Store </h1>
 
-    <div id="product-container" class="product-container"> </div>
+<div>
+    <ul id="product-container" class="product-container"></ul>
+</div>
 
     <script src= "main.js"></script>
 </body>
