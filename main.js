@@ -3,13 +3,13 @@
 fetch('https://www.course-api.com/javascript-store-products')
     .then(response => {
         if (!response.ok) {
-            throw new Error('Network response not ok');
+            throw new Error('Error in network response');
         }
         return response.json(); // Parse the response as JSON
     })
     .then(data => displayProducts(data)) // Display products
     .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
+        console.error('Problem found with the fetch operation:', error);
         document.getElementById('product-container').innerHTML = '<p>Failed to load products. Please try again later.</p>'; // Task 4: Handle Errors Gracefully
     });
 
